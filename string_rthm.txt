@@ -1,0 +1,21 @@
+;string_rthm
+{
+([srate] ([togo d]))
+
+([saw a] 1 30)
+([togo a] ([square] 20 ([saw a])) 1 0 0 0 1 0 0 0)
+([togo b] ([square] 20 ([saw a])) 1 0 0 0 0 1 0 0)
+([togo c] ([square] 20 ([saw a])) 1 0 1 0 1 0 1 0)
+([togo d] ([square] 20 ([saw a])) 16 18 8 18 16 4 16 64)
+
+([lights] ([togo c]))
+
+([left] ([right] 
+  ([add] 
+    ([string a] ([square] ([togo a]) 0) 1 ([corp b] 8 24) 126)
+    ([string b] ([square] ([togo b]) 0) 1 ([corp b] 8 20) 125)
+    ([string c] ([square] ([togo c]) 0) 1 ([corp a] 4 16) 127)
+    ([string d] ([square] ([and] ([togo a]) ([togo c])) 0) 1 ([corp a] 4 12) 126)
+  )
+))
+}
